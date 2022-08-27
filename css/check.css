@@ -1,0 +1,105 @@
+.check-head span, .check-block-head span {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.check-head span:nth-child(1), .check-block-head span:nth-child(1) {
+  color: #d34272;
+}
+.check-head span:nth-child(2), .check-block-head span:nth-child(2) {
+  color: #1dbb90;
+}
+
+.check-container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 51px;
+}
+
+.check-head {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 56px;
+}
+
+.check-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 54px;
+}
+
+.check-block-head {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+}
+
+.check-block-text {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: justify;
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #787878;
+}
+
+.check-block-image {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .check-container {
+    max-width: 900px;
+  }
+
+  .check {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .check .check-block {
+    -ms-flex-preferred-size: 260px;
+        flex-basis: 260px;
+  }
+
+  .check-head {
+    font-size: 32px;
+  }
+
+  .check-block-image {
+    display: block;
+    padding-right: 23px;
+  }
+  .check-block-image img {
+    width: 70px;
+    height: 60px;
+  }
+
+  .check-block-head {
+    -ms-flex-preferred-size: 165px;
+        flex-basis: 165px;
+    font-size: 25px;
+    text-align: left;
+  }
+}

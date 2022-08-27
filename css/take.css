@@ -1,0 +1,43 @@
+.take-head span {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.take-head span:nth-child(1) {
+  color: #d34272;
+}
+.take-head span:nth-child(2) {
+  color: #1dbb90;
+}
+
+.take {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.take-head {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 57px;
+}
+
+.take-block {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .take {
+    justify-content: space-between;
+  }
+
+  .take-head {
+    font-size: 32px;
+  }
+
+  .take-block {
+    flex-basis: 25%;
+  }
+}

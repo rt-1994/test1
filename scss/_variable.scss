@@ -1,0 +1,27 @@
+$green: #1dbb90;
+$pink: #d34272;
+$gray: #aaaaaa;
+$bgray: #474747;
+
+
+@mixin flx($fDir,$fWrap) {
+    display: flex;
+    flex-direction: $fDir;
+    flex-wrap: $fWrap;
+}
+
+
+%template_span{
+    span{
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    span:nth-child(1){
+        color: $pink;
+    }
+
+    span:nth-child(2){
+        color: $green;
+    }
+}

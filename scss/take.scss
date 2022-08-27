@@ -1,0 +1,33 @@
+@import "variable";
+
+.take{
+    @include flx(row,wrap);
+}
+
+.take-head{
+    flex-basis: 100%;
+    text-align: center;
+    @extend %template_span;
+    font-size: 25px;
+    margin-bottom: 57px;
+}
+
+.take-block{
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width:1024px){
+    .take{
+        justify-content: space-between;
+    }
+
+    .take-head{
+        font-size: 32px;
+    }
+
+    .take-block{
+        flex-basis: 25%;
+    }
+}

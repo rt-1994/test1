@@ -1,0 +1,102 @@
+.info-customers-say span, .info-customers-block-text-el span, .info-learn .info-learn-head span {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.info-customers-say span:nth-child(1), .info-customers-block-text-el span:nth-child(1), .info-learn .info-learn-head span:nth-child(1) {
+  color: #d34272;
+}
+.info-customers-say span:nth-child(2), .info-customers-block-text-el span:nth-child(2), .info-learn .info-learn-head span:nth-child(2) {
+  color: #1dbb90;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info-customers-say {
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 36px;
+}
+
+.info-customers-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+.info-customers-block .info-customers-block-photo {
+  margin-right: 18px;
+}
+.info-customers-block .info-customers-block-text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.info-customers-block-text-el span {
+  display: inline-block;
+  text-transform: unset;
+  padding-top: 5px;
+}
+
+.info-learn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.info-learn .info-learn-head {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 23px;
+  text-align: center;
+  margin: 35px 0;
+}
+.info-learn .info-learn-video {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.info-learn .info-learn-video video {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .info-customers {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+  }
+  .info-customers .info-customers-say {
+    text-align: start;
+    font-size: 32px;
+  }
+
+  .info-learn {
+    -ms-flex-preferred-size: 420px;
+        flex-basis: 420px;
+    margin-left: 85px;
+  }
+  .info-learn .info-learn-head {
+    text-align: start;
+    font-size: 32px;
+    margin: 0 0 35px 0;
+  }
+}

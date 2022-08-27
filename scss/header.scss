@@ -1,0 +1,232 @@
+@import "variable";
+
+.h-container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.header-icon{
+    width: 100%;
+    @include flx(row, wrap);
+}
+
+.header-icon-text{
+    margin: 40px 0 30px 0;
+    
+    .header-icon-text-link{
+        text-decoration: none;
+
+        .header-icon-text-link__el{
+            @extend %template_span;
+            font-size: 28px;
+            
+        }
+    
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 20px;
+            color: $gray;
+            padding-left: 25px;
+        } 
+    }
+}
+
+.header-icon-block{
+    flex-basis: 100%;
+
+    @include flx(row, nowrap);
+    justify-content: center;
+
+    .header-icon-block-link{
+        text-decoration: none;
+        margin-right: 7px;
+
+        >img{
+            width: 30px;
+            height: 31px;
+        }
+    }
+
+    .header-icon-block-link:last-child{
+        margin-right: 0;
+    }
+}
+
+.header-icon-tel{
+    margin: 30px 0;
+    flex-basis: 100%;
+    text-align: center;
+    position: relative;
+
+    .header-icon-tel__sp{
+        margin-right: 42px;
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+
+    .header-icon-tel__a{
+        display: inline-block;
+        text-decoration: none;
+        color: $pink;
+        font-weight: bold;
+        font-size: 21px;
+    }
+
+    .header-icon-tel__img{
+        position: absolute;
+        right: 55%;
+        top: -7px;
+    }
+}
+
+.header-inner{
+    background-color: $green;
+    position: relative;
+
+    &:before{
+        position: absolute;
+        content: "";
+        height: 113px;
+        width: 100%;
+        background-color: $pink;
+        z-index: 0;
+        bottom: 0
+    }
+}
+
+.header-inner-block{
+    display: flex;
+}
+
+
+.header-inner-block-image{
+    display: none;
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.header-inner-block-text{
+    flex-basis: 100%;
+}
+
+.header-inner-block-text-el{
+    margin-bottom: 102px;
+
+    h3{
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        font-size: 33px;
+        line-height: 40px;
+        padding-top: 30px;
+    }
+
+    p{
+        font-size: 15px;
+        line-height: 26px;
+        color: #474747;
+        margin-top: 27px;
+    }
+}
+
+.header-inner-block-text-link{
+    @include flx(row, nowrap);
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    a{
+        text-decoration: none;
+        text-transform: capitalize;
+        z-index: 3;
+        padding: 12px 15px;
+        color: #fff;
+        background-color: $green;
+        font-size: 18px;
+
+        &:hover{
+            background-color: #474747;
+        }
+    }
+}
+
+
+@media only screen and (min-width:1024px){
+    .h-container{
+        max-width: 940px;
+    }
+
+    .header-icon{
+        align-items: baseline;
+    }
+
+    .header-icon-inner{
+        display: flex;
+    }    
+
+    .header-icon-text{
+        flex-basis: 508px;
+        margin: 38px 0 31px 0;
+    }
+
+    .header-icon-block{
+        flex-basis: auto;
+        padding-right: 15px;
+    }
+
+    .header-icon-tel{
+        flex-basis: auto;
+        margin: 3px 0;
+    }
+
+    .header-inner:after{
+        content: "";
+        position: absolute;
+        width: 495px;
+        height: 100%;
+        background-color: rgba(150, 146, 146, 0.1);
+        top: 0;
+        transform: skew(25deg);
+        right: 15%;
+        z-index: 3;
+    }
+
+    .header-inner-block-image{
+        display: block;
+        flex-basis: 509px;
+        z-index: 2;
+        margin: 60px 0 51px 0;
+    }
+    
+    .header-inner-block-text{
+        flex-basis: 445px;
+        padding-left: 55px;
+        margin-top: 92px;
+
+        h3{
+            padding: 0;
+            line-height: 60px;
+            font-size: 43px;
+        }
+    }
+
+    .header-inner-block-text-el{
+        margin-bottom: 70px;
+    }
+
+    .header-inner-block-text-link{
+        
+        margin: 0;
+        a{
+            padding: 17px 35px;
+            z-index: 4;
+        }
+    }
+}
+

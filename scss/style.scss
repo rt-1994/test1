@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.wrapper{
+    max-width: 320px;
+    margin: auto;
+}
+
+.main-container{
+    max-width: 95%;
+    margin: auto;
+}
+
+@import "header.scss";
+@import "check.scss";
+@import "take.scss";
+@import "sign.scss";
+@import "customers.scss";
+@import "footer.scss";
+
+@media only screen and (min-width:1024px){
+    .wrapper{
+        max-width: 1170px;
+        border: 1px solid black;
+    }
+
+    .main-container{
+        max-width: 941px;
+    }
+}
